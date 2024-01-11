@@ -9,11 +9,11 @@ pipeline {
                 script {
                     // SCM ve kod derleme işlemleri
                     checkout scm
-                    bat 'mvn clean install'
+                    //bat 'mvn clean install'
                     snykSecurity(
                         snykInstallation: 'snyk@latest',
                         snykTokenId: 'selami',
-                        targetFile: 'pom.xml',
+                        //targetFile: 'pom.xml',
                       // place other parameters here
                     )
 
