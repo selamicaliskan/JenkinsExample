@@ -1,11 +1,15 @@
 pipeline {
     agent any
 
-    environment {
-        PATH = "C:\\Users\\selam\\AppData\\Roaming\\npm;%PATH%"
-    }
-
     stages {
+        stage('Check Environment') {
+            steps {
+                script {
+                    bat 'set'
+                }
+            }
+        }
+
         stage('Build and Scan Code') {
             steps {
                 script {
