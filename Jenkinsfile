@@ -5,15 +5,15 @@ pipeline {
         stage('Build and Scan Code') {
             steps {
                 script {
-                    
                     // SCM ve kod derleme işlemleri
                     checkout scm
-                    
-                    bat 'javac HelloWorld.java'
 
-                    // Code scan işlemi (örneğin, Snyk)
-                    bat 'snyk code test'
-                    
+                    // PATH değişkenini genişleterek 'cmd' komutunu ekleyin
+                    bat '''
+                        SET PATH=%PATH%;C:\\Windows\\System32
+                        javac HelloWorld.java
+                        snyk code test
+                    '''
                 }
             }
         }
