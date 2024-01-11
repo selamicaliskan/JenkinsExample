@@ -10,7 +10,6 @@ pipeline {
 
                     // PATH değişkenini genişleterek 'cmd' komutunu ekleyin
                     bat '''
-                        SET PATH=%PATH%;C:\\Windows\\System32
                         javac HelloWorld.java
                         snyk code test
                     '''
