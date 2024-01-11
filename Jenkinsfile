@@ -8,7 +8,7 @@ pipeline {
                     // SCM ve kod derleme işlemleri
                     checkout scm
                     snykSecurity(
-                      snykInstallation: 'synk@latest',
+                      snykInstallation: 'snyk@latest',
                       snykTokenId: 'selami',
                       // place other parameters here
                     )
