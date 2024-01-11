@@ -10,7 +10,7 @@ pipeline {
                     bat 'javac HelloWorld.java'
 
                     // Code scan işlemi (örneğin, Snyk)
-                    bat 'snyk test'
+                    bat 'snyk code test'
                 }
             }
         }
