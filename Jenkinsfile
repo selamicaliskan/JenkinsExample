@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        SNYK_PATH = "C:\Users\selam\AppData\Roaming\npm\node_modules\snyk" // Snyk'ın tam yolunu belirtin
+        SNYK_PATH = "C:\\Users\\selam\\AppData\\Roaming\\npm\\node_modules\\snyk" // Snyk'ın tam yolunu belirtin
     }
     stages {
         stage('Build and Scan Code') {
