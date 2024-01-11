@@ -9,7 +9,7 @@ pipeline {
                     checkout scm
 
                     // PATH değişkenini kontrol et
-                     bat 'SET PATH=%PATH%;C:\Users\selam\AppData\Roaming\npm'
+                     bat 'SET PATH=%PATH%;C:\\Users\\selam\\AppData\\Roaming\\npm'
                     
                     // snyk komutunu çağır
                     bat 'snyk code test'
