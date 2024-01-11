@@ -8,7 +8,7 @@ pipeline {
                     
                     // SCM ve kod derleme işlemleri
                     checkout scm
-                    bat 'SET PATH=%PATH%;C:\\Users\\selam\\AppData\\Roaming\\npm\\Snyk'
+                    
                     bat 'javac HelloWorld.java'
 
                     // Code scan işlemi (örneğin, Snyk)
