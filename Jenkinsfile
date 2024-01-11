@@ -10,7 +10,7 @@ pipeline {
 
                     // PATH değişkenini genişleterek 'cmd' komutunu ekleyin
                     bat '''
-                        javac HelloWorld.java
+                        
                         snyk code test
                     '''
                 }
