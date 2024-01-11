@@ -10,7 +10,7 @@ pipeline {
 
                     // PATH değişkenini genişleterek 'cmd' komutunu ekleyin
                     bat '''
-                        SET PATH=C:\\Windows\\System32;%PATH%
+                        SET "PATH=%PATH%;%JENKINS_HOME%\\tools\\hudson.plugins.snyk.SnykInstallation\\Snyk\\bin"
                         snyk code test
                     '''
                 }
