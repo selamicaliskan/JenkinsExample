@@ -1,8 +1,8 @@
 pipeline {
     agent any
-    tools {
+    /*tools {
         maven 'maven@latest' // Jenkins'ta tanımlanan Maven aracının adı
-    }
+    }*/
     stages {
         stage('Build and Scan Code') {
             steps {
