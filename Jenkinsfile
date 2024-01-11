@@ -9,10 +9,8 @@ pipeline {
                     checkout scm
 
                     // PATH değişkenini genişleterek 'cmd' komutunu ekleyin
-                    bat '''
-                        
-                        snyk code test
-                    '''
+                    bat 'snyk code test'
+                   
                 }
             }
         }
