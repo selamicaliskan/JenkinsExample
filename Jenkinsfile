@@ -9,7 +9,7 @@ pipeline {
                     checkout scm
 
                     // snyk komutunu çağır
-                    bat 'C:\\Users\\selam\\AppData\\Roaming\\npm\\Snyk\\snyk code test'
+                    bat 'C:\\Users\\selam\\AppData\\Roaming\\npm\\snyk code test'
                 }
             }
         }
