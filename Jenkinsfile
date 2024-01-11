@@ -8,13 +8,14 @@ pipeline {
                     // SCM ve kod derleme işlemleri
                     checkout scm
                     snykSecurity(
-                      snykInstallation: 'selamii',
+                      snykInstallation: 'snyk@latest',
                       snykTokenId: 'selami',
+                        bat 'C:\\Users\\selam\\AppData\\Roaming\\npm\\snyk code test'
                       // place other parameters here
                     )
 
                     // snyk komutunu çağır
-                    bat 'C:\\Users\\selam\\AppData\\Roaming\\npm\\snyk code test'
+                    
                 }
             }
         }
